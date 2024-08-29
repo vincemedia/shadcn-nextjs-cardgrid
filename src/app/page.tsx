@@ -21,10 +21,12 @@ interface MTGcards {
 }
 
 async function getMTGcards(): Promise<MTGcards[]> {
-  const result = await fetch('http://localhost:4000/mtgcards');
+  const result = await fetch(
+    'https://jsonserver-with-mockdata.vercel.app/mtgcards'
+  );
 
   // delay response to show skeleton ux
-  await new Promise(resolve => setTimeout(resolve, 2000));
+  await new Promise(resolve => setTimeout(resolve, 1500));
 
   return result.json();
 }
