@@ -36,11 +36,11 @@ export default async function Home() {
 
   return (
     <main>
-      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8 p-8'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 p-8'>
         {mtgcards.map(mtgcard => (
           <Card
             key={mtgcard.id}
-            className='flex flex-col justify-between from-red-50 to-blue-100 bg-gradient-to-bl via-white '
+            className='flex flex-col justify-between from-red-50 to-blue-100 bg-gradient-to-bl via-white min-w-500'
           >
             <CardHeader className='flex-row gap-4 items-center'>
               <Avatar>
