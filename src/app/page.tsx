@@ -36,7 +36,7 @@ export default async function Home() {
 
   return (
     <main>
-      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 p-8'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8 p-8'>
         {mtgcards.map(mtgcard => (
           <Card
             key={mtgcard.id}
@@ -58,18 +58,16 @@ export default async function Home() {
             </CardHeader>
             <CardContent>
               <div className='flex gap-2 items-center justify-start pb-4'>
-                <div className='w-6 h-6 rounded-full text-white border-2 border-purple-300 text-center  text-bold text-sm bg-gradient-to-r from-blue-400 to-orange-500 via-purple-500 animate-gradient-x'>
+                <div className='flex items-center justify-center w-6 h-6 rounded-full text-white border-0 border-zinc-300 text-center  text-bold text-sm bg-gradient-to-r from-blue-800 to-orange-700 via-green-700 animate-gradient-x'>
                   {mtgcard.manacost}
                 </div>{' '}
-                Mana to cast.
+                <div className='text-zinc-500'>mana to cast.</div>
               </div>
               <p>{mtgcard.description}</p>
             </CardContent>
             <CardFooter className='flex justify-between items-center'>
               <Button>View Card</Button>
-              {mtgcard.reservedlist && (
-                <Badge variant='outline'>Reserved list</Badge>
-              )}
+              {mtgcard.reservedlist && <Badge variant='outline'>Banned</Badge>}
             </CardFooter>
           </Card>
         ))}
