@@ -58,7 +58,7 @@ export default async function Home() {
             </CardHeader>
             <CardContent>
               <div className='flex gap-2 items-center justify-start pb-4'>
-                <div className='w-6 h-6 bg-slate-200 rounded-full border-2 border-slate-300 text-center text-slate-500 text-bold text-sm'>
+                <div className='w-6 h-6 rounded-full text-white border-2 border-purple-300 text-center  text-bold text-sm bg-gradient-to-r from-blue-400 to-orange-500 via-purple-500 animate-gradient-x'>
                   {mtgcard.manacost}
                 </div>{' '}
                 Mana to cast.
