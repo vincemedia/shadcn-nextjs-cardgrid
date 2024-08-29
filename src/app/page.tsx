@@ -53,12 +53,16 @@ export default async function Home() {
 
               <div>
                 <CardTitle>{mtgcard.title}</CardTitle>
-                <CardDescription>
-                  {mtgcard.manacost} mana to put into play.
-                </CardDescription>
+                <CardDescription></CardDescription>
               </div>
             </CardHeader>
             <CardContent>
+              <div className='flex gap-2 items-center justify-start pb-4'>
+                <div className='w-6 h-6 bg-slate-200 rounded-full border-2 border-slate-300 text-center text-slate-500 text-bold text-sm'>
+                  {mtgcard.manacost}
+                </div>{' '}
+                Mana to cast.
+              </div>
               <p>{mtgcard.description}</p>
             </CardContent>
             <CardFooter className='flex justify-between items-center'>
