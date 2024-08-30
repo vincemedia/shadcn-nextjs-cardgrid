@@ -6,7 +6,9 @@
 
 - Custom Tailwind styling applied to cards
 
-## Getting Started
+![Demo gif](demo.gif)
+
+## How to use
 
 Run the development server.
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
