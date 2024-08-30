@@ -21,6 +21,6 @@ Run the mock JSON api watching db.json file
 json-server --watch ./_data/db.json --port 4000
 ```
 
-## Deploy on Vercel
+Also works with a remote mock JSON API which can be deployed to Vercel
 
-Check out our [Next.js vercel deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[JSON mock server on Vercel docs](https://github.com/kitloong/json-server-vercel)
