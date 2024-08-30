@@ -21,6 +21,12 @@ interface MTGcards {
 }
 
 async function getMTGcards(): Promise<MTGcards[]> {
+  // Local API:
+  // const result = await fetch(
+  //   'http://localhost:4000/mtgcards'
+  // );
+
+  // Remote mock API
   const result = await fetch(
     'https://jsonserver-with-mockdata.vercel.app/mtgcards'
   );

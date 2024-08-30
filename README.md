@@ -1,20 +1,25 @@
-# Next.js project with Shadcn/ui chart components displaying trading card data
+# Responsive card grid
+
+- Built with Next.js using the Shadcn/ui Card component
+
+- Displays trading card data from JSON mock api
+
+- Custom Tailwind styling applied to cards
 
 ## Getting Started
 
-First, run the development server:
+Run the development server.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Run the mock JSON api watching db.json file
+
+```bash
+json-server --watch ./_data/db.json --port 4000
+```
 
 ## Deploy on Vercel
 
